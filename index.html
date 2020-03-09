@@ -1,1 +1,63 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Awesome color palette generator </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="colors.js"></script>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+
+
+
+</head>
+<body class="website-background">
+
+	<div id ="colors-viewer">
+		<h2 class="header"> Paleta de colores </h2>
+
+		<div id="color1" class="element-text element-border element-background color-view">
+			Fondo p&aacute;gina
+		</div>
+
+		<div id="color2" class="element-text element-border element-background color-view">
+			Texto elementos
+		</div>
+
+		<div id="color3" class="element-text element-border element-background color-view">
+			Borde elementos
+		</div>
+
+		<div id="color4" class="element-text element-border element-background color-view">
+			Fondo elementos
+		</div>
+
+		<div id="color5" class="element-text element-border element-background color-view">
+			Texto encabezado
+		</div>
+	</div>
+
+
+	<div id ="css-rules-div" >
+		<h2 class="header"> Reglas CSS</h2>
+		<textarea id="css-rules" class="element-border element-background element-text rules">
+			.website-background{ color: #FFFFFF;}
+
+			.element-text{ color: #FFFFFF;}
+
+			.element-border{ border-color: #FFFFFF;}
+
+			.element-background{ background-color: #FFFFFF;}
+
+			.header{ color: #FFFFFF;}
+		</textarea>
+	</div>
+
+
+	<div id="actions">
+		<button id="generar"> Generar nueva paleta</button>
+		<button id="limpiar"> Limpiar paleta</button>
+	</div>
+</body>
+
+</html>
